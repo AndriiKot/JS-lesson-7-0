@@ -18,6 +18,12 @@
     console.log(person.firstName);
     const andrii =  person;
     console.log(person);
+    andrii.firstName = 'Andrii';
+    andrii.lastName = 'Kotsiuba';
+    andrii.age = 37;
+    
+    const str = `${andrii.firstName} ${andrii.lastName} age: ${andrii.age}.`;
+    document.getElementById('demo1').innerText = str;
   </script>
 </body>
 </html>
