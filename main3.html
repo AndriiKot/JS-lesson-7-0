@@ -14,13 +14,13 @@
     const person = {
       firstName: 'Anonymous',
       lastName: 'Anonymous',
+      fullName: function() {
+        return `${this.firstName} ${this.lastName}`
+      }
     };
     
     const andrii = person;
-    andrii.fullName = function(){
-      return `${this.firstName} ${this.lastName}`
-    }
- 
+
     andrii.firstName = 'Andrii';
     andrii.lastName = 'Kotsiuba';
     andrii.age = 37;
